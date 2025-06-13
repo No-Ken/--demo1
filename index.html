@@ -1092,7 +1092,7 @@
                             <div class="detail-value">中 (78%)</div>
                         </div>
                     </div>
-                    <button class="btn btn-secondary">詳細を見る</button>
+                    <button class="btn btn-secondary" onclick="showScreen('job-accept')">詳細を見る</button>
                 </div>
             </div>
             
@@ -1174,7 +1174,7 @@
                 </div>
 
                 <button class="btn btn-primary" onclick="showJobAccepted()">この案件を受託する</button>
-                <button class="btn btn-secondary" style="margin-top: 10px;">お気に入りに保存</button>
+                <button class="btn btn-secondary" style="margin-top: 10px;" onclick="alert('お気に入りに保存しました')">お気に入りに保存</button>
             </div>
         </div>
 
@@ -1211,8 +1211,8 @@
                 <div class="form-group">
                     <label class="form-label">📱 ドライバー連絡先</label>
                     <div style="display: flex; gap: 10px;">
-                        <button class="btn btn-secondary" style="flex: 1;">📞 電話</button>
-                        <button class="btn btn-secondary" style="flex: 1;">💬 チャット</button>
+                        <button class="btn btn-secondary" style="flex: 1;" onclick="alert('電話機能は実装予定です')">📞 電話</button>
+                        <button class="btn btn-secondary" style="flex: 1;" onclick="showScreen('chat')">💬 チャット</button>
                     </div>
                 </div>
 
@@ -1255,7 +1255,7 @@
                     <label class="form-label">🔍 QRコード/ワンタイムコード</label>
                     <div style="text-align: center; padding: 40px; background: #f8f9fa; border-radius: 15px; margin-bottom: 20px;">
                         <div style="font-size: 48px; margin-bottom: 10px;">📷</div>
-                        <button class="btn btn-primary">QRコードをスキャン</button>
+                        <button class="btn btn-primary" onclick="alert('QRコード: ABC123\n認証完了')">QRコードをスキャン</button>
                         <div style="margin: 15px 0; color: #666;">または</div>
                         <input type="text" class="form-input" placeholder="6桁のコードを入力" maxlength="6" style="text-align: center; font-size: 18px; letter-spacing: 2px;">
                     </div>
@@ -1549,7 +1549,7 @@
                 </div>
 
                 <button class="btn btn-primary" onclick="showScreen('driver-home')">ダッシュボードに戻る</button>
-                <button class="btn btn-secondary" style="margin-top: 10px;">次の案件を探す</button>
+                <button class="btn btn-secondary" style="margin-top: 10px;" onclick="showScreen('driver-search')">次の案件を探す</button>
             </div>
         </div>
 
@@ -1691,7 +1691,7 @@
                         </div>
                         <div style="display: flex; gap: 10px;">
                             <button class="btn btn-secondary" style="flex: 1; font-size: 14px;" onclick="showScreen('chat')">💬 チャット</button>
-                            <button class="btn btn-secondary" style="flex: 1; font-size: 14px;">📞 電話</button>
+                            <button class="btn btn-secondary" style="flex: 1; font-size: 14px;" onclick="alert('電話機能は実装予定です')">📞 電話</button>
                         </div>
                     </div>
                 </div>
@@ -1763,8 +1763,8 @@
                         「埼玉から千葉への配送経験多数あります。車両の取り扱いには細心の注意を払います。」
                     </div>
                     <div style="display: flex; gap: 10px;">
-                        <button class="btn btn-primary" style="flex: 1;">採用する</button>
-                        <button class="btn btn-secondary" style="flex: 1;">詳細</button>
+                        <button class="btn btn-primary" style="flex: 1;" onclick="alert('ドライバーを採用しました')">採用する</button>
+                        <button class="btn btn-secondary" style="flex: 1;" onclick="showScreen('driver-profile-view')">詳細</button>
                     </div>
                 </div>
 
@@ -1784,8 +1784,8 @@
                         「副業でドライバーをしています。土日の配送は特に得意です。よろしくお願いします。」
                     </div>
                     <div style="display: flex; gap: 10px;">
-                        <button class="btn btn-primary" style="flex: 1;">採用する</button>
-                        <button class="btn btn-secondary" style="flex: 1;">詳細</button>
+                        <button class="btn btn-primary" style="flex: 1;" onclick="alert('ドライバーを採用しました')">採用する</button>
+                        <button class="btn btn-secondary" style="flex: 1;" onclick="showScreen('driver-profile-view')">詳細</button>
                     </div>
                 </div>
             </div>
@@ -1915,8 +1915,8 @@
                     <textarea class="form-textarea" placeholder="会社や事業について簡単に紹介してください">東京で中古車販売を手がけています。お客様に安心・安全なサービスを提供しています。</textarea>
                 </div>
 
-                <button class="btn btn-primary">保存</button>
-                <button class="btn btn-secondary" style="margin-top: 10px;">キャンセル</button>
+                <button class="btn btn-primary" onclick="alert('プロフィールを保存しました')">保存</button>
+                <button class="btn btn-secondary" style="margin-top: 10px;" onclick="showScreen('driver-profile')">キャンセル</button>
             </div>
         </div>
 
@@ -2276,7 +2276,7 @@
                     </select>
                 </div>
 
-                <button class="btn btn-primary">検索実行</button>
+                <button class="btn btn-primary" onclick="alert('検索を実行しました')">検索実行</button>
 
                 <div style="margin-top: 30px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
@@ -2465,7 +2465,7 @@
                     <div class="badge badge-warning" style="margin-top: 10px;">処理中</div>
                 </div>
 
-                <button class="btn btn-secondary">税務レポートをダウンロード</button>
+                <button class="btn btn-secondary" onclick="alert('税務レポートをダウンロード中...')">税務レポートをダウンロード</button>
             </div>
             
             <div class="bottom-nav">
@@ -2711,7 +2711,7 @@
                             <div class="notification-time">5分前</div>
                         </div>
                     </div>
-                    <button class="btn btn-sm" style="background: #007bff; color: white; margin-top: 10px;">詳細を見る</button>
+                    <button class="btn btn-sm" style="background: #007bff; color: white; margin-top: 10px;" onclick="showScreen('job-accept')">詳細を見る</button>
                 </div>
                 
                 <div class="notification-item">
@@ -2745,7 +2745,7 @@
                             <div class="notification-time">3日前</div>
                         </div>
                     </div>
-                    <button class="btn btn-sm" style="background: #ffc107; color: #333; margin-top: 10px;">更新する</button>
+                    <button class="btn btn-sm" style="background: #ffc107; color: #333; margin-top: 10px;" onclick="alert('書類更新画面に移動します')"> 更新する</button>
                 </div>
                 
                 <div class="notification-item">
